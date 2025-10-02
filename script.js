@@ -123,9 +123,9 @@ function finishGame() {
     var score = calcScore(dist);
     updateScoreDisplay(score);
     alert('Total distance: ' + Math.floor(dist) + ' meters. Score: ' + score);
-    var name  = prompt('Enter your name:');
+    var name  = prompt('Enter your GROUP name:');
     if (!name) { return; }
-    var phone = prompt('Enter your cellphone number:');
+    var phone = prompt('Enter your ATTEMPT number:');
     if (!phone) { return; }
     saveToLeaderboard(name, phone, score);
 }
